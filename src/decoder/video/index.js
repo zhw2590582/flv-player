@@ -70,7 +70,7 @@ export default class VideoSuperDecoder {
                     if (
                         (options.live || !options.cache) &&
                         framesSize >= options.videoChunk * 64 &&
-                        this.videoframes.length - 1 > index &&
+                        this.videoframes.length - 1 >= index &&
                         this.timestamps.length - 1 > index
                     ) {
                         this.playIndex = 0;
